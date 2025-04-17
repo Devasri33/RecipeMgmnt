@@ -1,7 +1,7 @@
 # Food-Recipe-Website
 A simple and elegant food recipe website showcasing various recipes, an about page, a menu section and a contact us page. Explore delicious dishes and learn how to make them!
 
-Hosted Link: Hosted Link: https://devasri33.netlify.app/
+Hosted Link: https://devasri33.netlify.app/
 
 
 ## Home Page Screenshot
@@ -19,7 +19,7 @@ To explore the website locally on your machine, follow these steps:
 
 1. Clone this repository to your local machine using:
  
-   git clone https://github.com/suryaspandey/Food-Recipe-Website.git 
+   git clone https://github.com/Devasri33/RecipeMgmnt.git 
 
 2. Open any HTML file in your preferred web browser to navigate the website.
 
