@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup | Riya's Kitchen</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create an Account</h2>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    // Redirect to homepage if already logged in
+    if (sessionStorage.getItem("loggedIn") === "true") {
+      window.location.href = "index.html";
+    }
+
+    const signupForm = document.getElementById("signupForm");
+
+    signupForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const username = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password === confirmPassword) {
+        alert("Account created successfully!");
+        window.location.href = "login.html"; // Redirect to login after signup
+      } else {
+        alert("Passwords do not match!");
+      }
+    });
+  </script>
+</body>
+</html>
